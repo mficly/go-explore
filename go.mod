@@ -1,3 +1,3 @@
-module main01
+module myproject
 
 go 1.19

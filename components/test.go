@@ -1,4 +1,4 @@
-package mytest
+package components
 
 import (
  "fmt"

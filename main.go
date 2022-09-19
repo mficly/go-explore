@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"time"
-	"main01/mytest"
+	"myproject/components"
 )
 
 type userLoginInfo struct {
@@ -15,6 +15,6 @@ type userLoginInfo struct {
 }
 
 func main(){
-	test.TestPrint()
+	components.TestPrint()
     fmt.Printf("Test current time %v", time.Now().Format("2006-01-02 15:04:05"))
 }
