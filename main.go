@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"time"
-	"myproject/components"
+	"os"
+	"myproject/db"
 )
 
 type userLoginInfo struct {
@@ -15,6 +16,7 @@ type userLoginInfo struct {
 }
 
 func main(){
-	components.TestPrint()
-    fmt.Printf("Test current time %v", time.Now().Format("2006-01-02 15:04:05"))
+	os.Setenv("RUNTIME_ENV", "sit")
+	db.InitConnection()
+    fmt.Printf("execute complete, current time %v", time.Now().Format("2006-01-02 15:04:05"))
 }
