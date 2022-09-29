@@ -7,6 +7,7 @@ go mod tidy
 ```
 
 need to follow conventional golang project layout, notice that no /src folder is allowed
+
 https://github.com/golang-standards/project-layout
 
 original proxy endpoint
